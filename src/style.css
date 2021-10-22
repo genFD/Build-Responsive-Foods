@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+/*
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+}
+html {
+  /* //make 1rem = 10px instead of default 16px */
+  font-size: 62.5%;
+  /* //  */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+/*
+=============== 
+End of global Styles
+===============
+*/
+
+/*
+=============== 
+Section I
+===============
+*/
+
+.section-one {
+  width: 100%;
+  height: 100vh;
+  background-color: #001413;
+  /* Place element horizontally in the center with flexbox and add space btw them*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* customize the title */
+.section-title {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  /* create shadow effect */
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
+.image-slide-show {
+  position: relative;
+}
+
+.image-slide-show i {
+  font-size: 30rem;
+  color: #52e0d0;
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  transition: ease-in-out 0.3s;
+}
+
+i.change {
+  transform: translate(-50%, -50%) scale(1);
+  transition: ease-in-out 0.3s;
+}
+/*
+=============== 
+End of section I
+===============
+*/
