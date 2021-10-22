@@ -21,6 +21,16 @@ html {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
 }
+.section-title {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  /* create shadow effect */
+  text-shadow: 0.3rem 0.3rem 0.3rem #000;
+}
 
 /*
 =============== 
@@ -44,17 +54,7 @@ Section I
   align-items: center;
   justify-content: space-evenly;
 }
-/* customize the title */
-.section-title {
-  font-size: 6rem;
-  font-weight: 900;
-  color: #fff;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 0.5rem;
-  /* create shadow effect */
-  text-shadow: 0.3rem 0.3rem 0.3rem #000;
-}
+
 .image-slide-show {
   position: relative;
 }
