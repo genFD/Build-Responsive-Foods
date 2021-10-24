@@ -15,9 +15,7 @@ Global Styles
   outline: none;
 }
 html {
-  /* //make 1rem = 10px instead of default 16px */
   font-size: 62.5%;
-  /* //  */
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
 }
@@ -28,13 +26,91 @@ html {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.5rem;
-  /* create shadow effect */
   text-shadow: 0.3rem 0.3rem 0.3rem #000;
 }
 
 /*
 =============== 
 End of global Styles
+===============
+*/
+
+/*
+=============== 
+Navbar
+===============
+*/
+.navbar {
+  height: 14rem;
+  width: 100%;
+  background-color: #001413;
+  position: fixed;
+  top: -14rem;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.2rem 0.2rem 2rem #181925;
+  transition: top 0.4s;
+}
+.navbar.change {
+  top: 0;
+  transition: top 0.4s 0.2s;
+}
+.navbar-link {
+  color: #40c9a2;
+  margin: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+  transition: color 0.3s;
+}
+.navbar-link:hover {
+  color: #fff;
+}
+.navbar-link i {
+  font-size: 7rem;
+}
+.navbar-link span {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.5rem;
+  margin-top: 0.5rem;
+}
+.menu {
+  height: 6rem;
+  width: 4rem;
+  background-color: #40c9a2;
+  position: fixed;
+  top: 1rem;
+  left: 5rem;
+  border-radius: 30rem 30rem 15rem 15rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem #181925 -0.1rem -0.1rem -0.1rem #181925;
+  cursor: pointer;
+  transition: top 0.4s 0.2s;
+  z-index: 100;
+}
+.menu.change {
+  top: 15rem;
+  transition: top 0.4s;
+}
+
+.menu::before {
+  content: '';
+  width: 0.3rem;
+  height: 15rem;
+  background-color: #52e0d0;
+  position: absolute;
+  top: -15rem;
+  left: calc(50% - 0.15rem);
+  box-shadow: 0.1rem 0 0.1rem #000;
+}
+
+/*
+=============== 
+End of Navbar
 ===============
 */
 
@@ -48,7 +124,6 @@ Section I
   width: 100%;
   height: 100vh;
   background-color: #001413;
-  /* Place element horizontally in the center with flexbox and add space btw them*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,17 +253,15 @@ section III
 
 .section-three {
   background-color: #001413;
-  padding: 0 5rem;
+  padding: 0 3rem 5rem 5rem;
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 5rem;
-  /* border: 1px solid red; */
-  padding-left: 8rem;
 }
 .gallery-link {
   position: relative;
@@ -343,3 +416,90 @@ footer {
 End of footer
 ===============
 */
+
+/* Responsive */
+@media (max-width: 1400px) {
+  html {
+    font-size: 50%;
+  }
+  .section-two {
+    height: auto;
+    padding: 10rem 0 12rem 0;
+  }
+  .cards-container {
+    margin-top: 10rem;
+  }
+
+  .gallery-link {
+    width: 40rem;
+    height: 25rem;
+    margin: 5rem;
+  }
+  .food-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .section-title {
+    font-size: 9rem;
+    margin: 0 5rem;
+  }
+  .image-slide-show i {
+    font-size: 25rem;
+  }
+  .cards-container {
+    flex-wrap: wrap;
+  }
+  .card-container {
+    margin: 5rem;
+  }
+  footer {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-link {
+    margin: 2rem;
+  }
+  .navbar-link i {
+    font-size: 4rem;
+  }
+  .navbar-link span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-title {
+    font-size: 7rem;
+    margin: 0 10rem;
+  }
+  .image-slide-show i {
+    font-size: 20rem;
+  }
+  .menu {
+    left: 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer-text-container {
+    margin-bottom: 8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 40%;
+  }
+  .navbar-link {
+    margin: 0 0.7rem;
+  }
+}
+
+/* end of responsive */
