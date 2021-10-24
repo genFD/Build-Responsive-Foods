@@ -39,8 +39,8 @@ Users should be able to view the optimal layout for the four sections (Navbar, s
 
 ### Useful resources
 
-[Vanilla Js](https://vanilla.js.org/)
-[Icons](https://cdnjs.com/libraries/font-awesome)
+- [Vanilla Js](https://vanilla.js.org/)
+- [Icons](https://cdnjs.com/libraries/font-awesome)
 
 
 
