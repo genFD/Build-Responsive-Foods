@@ -25,7 +25,7 @@ Users should be able to view the optimal layout for the four sections (Navbar, h
 
 ### Links
 
-- Live Site URL: [Food](https://b-ag.netlify.app//)
+- Live Site URL: [Food](https://food-respsv.netlify.app)
 
 ### Workflow
 
