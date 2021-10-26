@@ -21,11 +21,11 @@ Thanks for checking out this project.
 ### The challenge
 
 Build responsive website using HTML, CSS and JS : 
-Users should be able to view the optimal layout for the four sections (Navbar, slides, gallery and footer) depending on their device's screen size.
+Users should be able to view the optimal layout for the four sections (Navbar, hero, about and contact) depending on their device's screen size.
 
 ### Links
 
-- Live Site URL: [Food](https://food-respsv.netlify.app/)
+- Live Site URL: [Food](https://b-ag.netlify.app//)
 
 ### Workflow
 
